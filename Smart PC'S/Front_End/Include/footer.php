@@ -1,3 +1,5 @@
+
+<!-- Footer Section -->
 <footer class="footer">
       <!-- Container Starts -->
       <div class="container">
@@ -13,7 +15,6 @@
             </p>
            
           </div>
-          
           <!-- Footer Widget Ends -->
 
           <!-- Footer Widget Starts -->
@@ -56,7 +57,9 @@
             </h3>
             <div class="contact-us">
               <form>
-                
+                <div class="form-group">
+                  <input type="text" class="form-control" id="exampleInputName2" placeholder="Enter your name">
+                </div>
                 <div class="form-group">
                   <input type="email" class="form-control" id="exampleInputEmail2" placeholder="Enter your email">
                 </div>
@@ -68,7 +71,32 @@
         </div>
         <!-- Row Ends -->
       </div>
-  
+      <!-- Copyright -->
+      <div id="copyright">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-6 col-md-6 col-xs-12">
+              <p class="copyright-text">All copyrights reserved © 2021</p>
+            </div>
+            <div class="col-lg-6 col-md-6 col-xs-12">
+              <ul class="nav nav-inline  justify-content-end ">
+                <li class="nav-item">
+                  <a class="nav-link active" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Sitemap</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Privacy Policy</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Terms of services</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
 <center>
         <div class="bottom_footer">
           <p>Privacy | Terms | Support | Security </p>
@@ -96,7 +124,7 @@
            
         <br>
       
-      <p>©2021 SMART PC's, INC.All rights reserved</p></center>
+      <p>©2021 COVID-19 UPDATE, INC.All rights reserved</p></center>
 
       <!-- Copyright  End-->
       </footer>
@@ -126,4 +154,3 @@
     <script src="js/form-validator.min.js"></script>
     <script src="js/contact-form-script.js"></script>
     <script src="js/main.js"></script>
-  

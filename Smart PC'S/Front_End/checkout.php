@@ -7,11 +7,12 @@
 
     <title>Smart PC's</title>
     
-<?php
+    
+	<?php
 
 include("../Back_End/Include/functions.php");
 include("../Back_End/Include/db.php");
-
+error_reporting(0);
 
 ?>
 
@@ -46,27 +47,21 @@ include("../Back_End/Include/db.php");
     <!--Title logo-->
     <link rel="shortcut icon" href="images/title_icon.png" type="image/png">
 
-  </head>
-  <body>
-<?php
-include("Include/header.php");
-?>
-<br><br><br><br>
-<br>
+		</head>
+		<body>
+	<?php
+	include("Include/header.php");
 
-<section class="sign-up">
-        <div class="container">
-            <div class="row justify-content-center">
-            <div class="col-lg-10">
-                    <div class="section-title text-center pb-40">
-                        <div class="line m-auto"></div>
-                        <h3 class="title"> <span>Checkout</span></h3>
-                    </div>  </div>  </div> 
-</div>
-<div class="row">
-						<div class="col-md-10">
+	?>
+
+	<br><br><br><br>
+	<br>
+	<div class="content">
+					<div class="container">
+
+					<div class="row">
+						<div class="col-md-7 col-lg-8">
 							<div class="card">
-								
 								<div class="card-body">
 									<form action="#">
 										<h4 class="card-title">Personal Information</h4>
@@ -74,94 +69,224 @@ include("Include/header.php");
 											<div class="col-md-6">
 												<div class="form-group">
 													<label>First Name</label>
-													<input type="text" class="form-control">
+													<input type="text" class="form-control" required>
 												</div>
 												<div class="form-group">
 													<label>Last Name</label>
-													<input type="text" class="form-control">
+													<input type="text" class="form-control"required> 
 												</div>
 												<div class="form-group">
-													<label>Blood Group</label>
-													<select class="select">
-														<option>Select</option>
-														<option value="1">A+</option>
-														<option value="2">O+</option>
-														<option value="3">B+</option>
-														<option value="4">AB+</option>
+													<label>Pick Up station</label>
+													<select class="form-control"required>
+														<option >Select</option>
+														<option value="1">Kasarani</option>
+														<option value="2">CBD+</option>
+														<option value="3">Rongai</option>
+														<option value="4">Pangani</option>
+														<option value="5">Nakuru</option>
 													</select>
-												</div>
-												<div class="form-group">
-													<label class="d-block">Gender:</label>
-													<div class="form-check form-check-inline">
-														<input class="form-check-input" type="radio" name="gender" id="gender_male" value="option1">
-														<label class="form-check-label" for="gender_male">Male</label>
-													</div>
-													<div class="form-check form-check-inline">
-														<input class="form-check-input" type="radio" name="gender" id="gender_female" value="option2">
-														<label class="form-check-label" for="gender_female">Female</label>
-													</div>
 												</div>
 											</div>
 											<div class="col-md-6">
 												<div class="form-group">
-													<label>Username</label>
-													<input type="text" class="form-control">
+													<label>Phone number</label>
+													<input type="text" class="form-control"required>
 												</div>
 												<div class="form-group">
 													<label>Email</label>
-													<input type="text" class="form-control">
+													<input type="text" class="form-control"required>
+												</div>
+												<div class="form-group">
+													<label>Address</label>
+													<input type="text" class="form-control"required>
+												</div>
 												</div>
 
-												<div class="form-group">
-													<label>Password</label>
-													<input type="text" class="form-control">
-												</div>
-												<div class="form-group">
-													<label>Repeat Password</label>
-													<input type="text" class="form-control">
-												</div>
-											</div>
-										</div>
-										<h4 class="card-title">Postal Address</h4>
-										<div class="row">
+											
+										<h4 class="card-title">Payment method</h4>
+										
+										
 											<div class="col-md-6">
-												<div class="form-group">
-													<label>Address Line 1</label>
-													<input type="text" class="form-control">
-												</div>
-												<div class="form-group">
-													<label>Address Line 2</label>
-													<input type="text" class="form-control">
-												</div>
-												<div class="form-group">
-													<label>State</label>
-													<input type="text" class="form-control">
-												</div>
-											</div>
-											<div class="col-md-6">
-												<div class="form-group">
-													<label>City</label>
-													<input type="text" class="form-control">
-												</div>
-												<div class="form-group">
-													<label>Country</label>
-													<input type="text" class="form-control">
-												</div>
-												<div class="form-group">
-													<label>Postal Code</label>
-													<input type="text" class="form-control">
-												</div>
-											</div>
+											<label class="payment-radio">
+													<input type="radio" name="radio" default>
+													<span class="checkmark"></span>
+													Mpesa
+												</label>
+												<br>
+										    <label class="payment-radio">
+													<input type="radio" name="radio">
+													<span class="checkmark"></span>
+													Paypal
+												</label>
+
+												
+
+
 										</div>
-										<div class="text-right">
-											<button type="submit" class="btn btn-primary">Submit</button>
 										</div>
+				
+										
+										<Button href="#pay_now" data-toggle="modal"  type="submit" name="submit" class="btn btn-lg btn-common animated fadeInUp"> PAY NOW </Button>
+									
+										
 									</form>
+								
+							</div>
+						</div>
+					</div>
+					<div class="col-md-5 col-lg-4 theiaStickySidebar">
+						
+							<!-- Order Summary -->
+							<div class="card booking-card">
+								<div class="card-header">
+									<h4 class="card-title">Order Summary</h4>
+								</div>
+								
+								
+
+								<form action="" enctype="multipart/form-data" method="post">
+								<table class="table table-hover mb-0">
+											<thead>
+
+				<th>Product(s)</th>
+				<th name="qty">Quantity </th>
+				<th>Price</th>
+				</tr>
+
+		<?php
+
+
+					$total = 0;
+					global $con;
+
+					$ip = getip();
+
+					$price = "select * from cart where ip_add = '$ip'";
+
+					$run_price = mysqli_query($con,$price) ;
+
+					while($pprice = mysqli_fetch_array($run_price)){
+
+					$pro_id = $pprice['p_id'];
+
+					$prod_price = "select * from products where prd_id = '$pro_id'";
+
+					$run_pro_price = mysqli_query($con,$prod_price);
+
+
+			while($ppprice = mysqli_fetch_array($run_pro_price)){
+
+						$product_price = array($ppprice['prd_price']);
+						$product_title = $ppprice['prd_title'];
+						$product_image = $ppprice['prd_img'];
+						$single_price = $ppprice['prd_price'];
+
+
+				$price_sum = array_sum($product_price);
+
+				$total +=$price_sum;
+
+				//echo  $product_price;
+
+				?>
+
+						<tr align="center">
+
+
+						<td><?php echo $product_title; ?>
+						<br>
+						<img src="images/<?php echo $product_image; ?>" >
+						</td>
+						<td>
+
+						<p>1</p>
+
+							</td>
+
+							<?php
+							error_reporting(0);
+							if (isset($_POST['update_cart'])){
+
+							$qty=$_POST['qty'];
+
+							$update_qty="update cart set qty='$qty'";
+							$run_qty=mysqli_query($con, $update_qty);
+							$_SESSION['qty']=$qty;
+							$total=$total*$qty;
+
+
+
+								}
+								?>
+
+								</td>
+											<td>
+
+											<?php echo "Ksh".$single_price;  ?>
+											</td>
+
+								</tr>
+
+								<?php
+
+								}
+								}
+								?>
+								</table>
+
+								<div class="total_price">
+
+								Total:<span class="price"><?php total_price(); ?> </span> </div>
+								</div>
+								
 								</div>
 							</div>
 						</div>
 					</div>
-</section>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- Add Time Slot Modal -->
+	<div class="modal fade custom-modal" id="pay_now">
+			<div class="modal-dialog modal-dialog-centered">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h5 class="modal-title">Mpesa payment</h5>
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+						</button>
+					</div>
+					<div class="modal-body">
+						
+						<br>
+						<form action="mpesa.php" method="post">
+						<label >Enter Phone Number: </label>
+						<input class="form-control" type="text" id="phone" placeholder="2547000000000" name="phone" required><br>
+						
+						<label >Amount to be paid:</label>
+						<input class="form-control" type="text" value=<?php total_price(); ?> name="amt" disabled><br>
+						
+						<center>
+						<input type="submit" name="submit" class="btn btn-lg btn-common animated fadeInUp" value="Pay With Mpesa" name="btnPay">
+						</center>
+					</form>
+								</div>
+							
+							</div>
+						</div>
+				   </div>
+				</div>
+			</div>
+		</div>
+		<!-- /Add Time Slot Modal -->
+
+                            
+
+
+
+
+
           <?php
    include('Include/footer.php')
           ?>

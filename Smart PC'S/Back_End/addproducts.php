@@ -111,7 +111,8 @@ $cat_title = $row_cats['cat_title'];
 											<div class="col-md-10">
 												<input class="form-control" name="prd_img" type="file">
 											</div>
-										</div>
+					
+                    					</div>
                                         <div class="form-group row">
 											<label class="col-form-label col-md-2">Product Keyword</label>
 											<div class="col-md-10">
@@ -163,10 +164,14 @@ if(isset($_POST['index'])){
    if($run_product){
    
     echo "<script>
-   Product added
+    Swal.fire({
+      position: 'top-end',
+      icon: 'success',
+      title: 'PRODUCT ADDED',
+      showConfirmButton: false,
+      timer: 2000
+    })
     </script>"; 
-
-    
     
   
   

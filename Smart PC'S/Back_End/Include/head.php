@@ -37,6 +37,7 @@ $username = $row['username'];
         <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
         <link rel="stylesheet" type="text/css" href="css/feathericon.min.css">
         <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+		<link rel="stylesheet" type="text/css" href="css/sweet-alert.css">
 		<!-- Main Wrapper -->
         <div class="main-wrapper">
 		

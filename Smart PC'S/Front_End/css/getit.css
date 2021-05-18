@@ -322,6 +322,12 @@
     float:left;
     padding:0px 0 0 75px;
     }
+    .total_price{
+        float: right;
+        font-size: 20px;
+        font-family: 'Times New Roman', Times, serif;
+
+    }
     .form_row{
     width:335px;
     clear:both;
@@ -399,4 +405,4 @@
     }
 
     /*--------------footer----------------*/
-    
+   
