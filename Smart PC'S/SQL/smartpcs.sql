@@ -214,32 +214,6 @@ INSERT INTO `customer_orders` (`order_id`, `customer_id`, `due_amount`, `invoice
 
 -- --------------------------------------------------------
 
---
--- Table structure for table `farmer`
---
-
-CREATE TABLE `farmer` (
-  `farmer_id` int(50) NOT NULL,
-  `username` varchar(20) NOT NULL,
-  `phone` varchar(15) NOT NULL,
-  `Email_Id` varchar(20) NOT NULL,
-  `password` varchar(100) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-
---
--- Dumping data for table `farmer`
---
-
-INSERT INTO `farmer` (`farmer_id`, `username`, `phone`, `Email_Id`, `password`) VALUES
-(1, 'Sarah', '0722563895', 'fam@gmail.com', '78ae67a9b8dec853ca37dd0c05976e1f'),
-(2, 'Jeff', '070245556333', 'jeff@gmail.com', '72719a4b858009fff3391475e0d00aa1'),
-(5, 'Goodwill', '07145898667', 'goodwill@gmail.com', 'aaf0916d9b2785841e98867be2d33e3a'),
-(9, 'Henry', '0723145263', 'Henry@gmail.com', '59e71bf22401656a135d8c4a9a8529ed'),
-(42, 'Luna', '070245556333', 'luna@gmail.com', '5b447f00509109666809ef7955671cc3');
-
--- --------------------------------------------------------
-
---
 -- Table structure for table `mobile_payments`
 --
 
@@ -433,12 +407,7 @@ ALTER TABLE `customer_orders`
   ADD KEY `product_id` (`product_id`(3072));
 
 --
--- Indexes for table `farmer`
---
-ALTER TABLE `farmer`
-  ADD PRIMARY KEY (`farmer_id`);
 
---
 -- Indexes for table `mobile_payments`
 --
 ALTER TABLE `mobile_payments`
@@ -501,12 +470,7 @@ ALTER TABLE `customer_orders`
   MODIFY `order_id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=69;
 
 --
--- AUTO_INCREMENT for table `farmer`
---
-ALTER TABLE `farmer`
-  MODIFY `farmer_id` int(50) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=446;
 
---
 -- AUTO_INCREMENT for table `mobile_payments`
 --
 ALTER TABLE `mobile_payments`
@@ -541,12 +505,7 @@ ALTER TABLE `user`
 --
 
 --
--- Constraints for table `admin`
---
-ALTER TABLE `admin`
-  ADD CONSTRAINT `admin_ibfk_1` FOREIGN KEY (`admin_id`) REFERENCES `farmer` (`farmer_id`);
 
---
 -- Constraints for table `cart`
 --
 ALTER TABLE `cart`
